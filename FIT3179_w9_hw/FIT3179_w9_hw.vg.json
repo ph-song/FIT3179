@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Total Number of Olympic Bronze Medals of each country",
+    "projection": {"type": "equalEarth"},
+    "layer":[
+        {
+            "data": {
+              "url": "data/ne_110m_admin_0.json",
+              "format": {"type": "topojson", "feature": "ne_110m_admin_0_map_units"}
+            },
+            "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+          },
+        {
+        "data": {
+            "url": "data/ne_110m_admin_0.json",
+            "format": {
+                "type": "topojson",
+                "feature": "ne_110m_admin_0_map_units"
+            }
+        },
+        "transform": [
+            {
+                "lookup": "properties.NAME",
+                "from": {
+                    "data": {
+                        "url": "data/FIT3179_w9_hw_olympic.csv"
+                        },
+                        "key": "Country",
+                        "fields": ["Bronze"]
+                    }
+                }
+            ],
+            "mark": {"type":"geoshape", "stroke": "white"},
+            
+            "encoding": {
+                "color": {
+                    "field": "Bronze",
+                    "type": "quantitative",
+                    "title": "number of medals",
+                    "scale": {"scheme": "blues"}
+                }
+            }
+        }
+        ]
+
+    }

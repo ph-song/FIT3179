@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "2022 Unicorn" },
+    "data": {
+        "url": "data/unicorn.csv"
+    },
+    "mark": {
+        "type":"bar"
+    },
+    "encoding": {
+        "x": { 
+            "field": "Company", 
+            "aggregate":"count"
+        },
+        "y": { 
+            "field":"Country_top", 
+            "type":"nominal",
+            "sort": "-x"
+        }
+    }
+}
