@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Total Number of Unicorn Companies of each country",
+    "data": {"url": "data/unicorn.csv"},
+
+    "params": [
+        {
+            "name": "value_select",
+            "value": 5,
+            "bind": {
+              "input": "range",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "name": "valuation of company (billion USD):  "
+        }
+    }
+    ],
+    "transform": [{"filter": "datum.Valuation >= value_select"}],
+
+    "mark": "bar",
+    "encoding": {
+        "y":{"field":"Country_top", "sort": "-x", "title": "country/region"},
+        "x":{"aggregate":"count", "field":"Company", "title": "number of unicorn companies"},
+        "tooltip": [
+            {"field": "Country_top", "type": "nominal"},
+            {"field": "Country_top", "type": "quantitative", "aggregate": "count", "title": "number of unicorn companies"}
+        ]
+
+    }
+}

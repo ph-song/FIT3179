@@ -7,28 +7,33 @@
     "layer":[
         {
             "data": {
-              "url": "data/ne_110m_admin_0.json",
-              "format": {"type": "topojson", "feature": "ne_110m_admin_0_map_units"}
+              "url": "data/oceans.json",
+              "format": {"type": "topojson", "feature": "oceans"}
             },
-            "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+            "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
           },
         {
+            "data": {
+            "url": "data/world_map.json",
+            "format": {"type": "topojson", "feature": "countries"}
+            },
+            "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
+        },
+        {
         "data": {
-            "url": "data/ne_110m_admin_0.json",
+            "url": "data/world_map.json",
             "format": {
                 "type": "topojson",
-                "feature": "ne_110m_admin_0_map_units"
+                "feature": "countries"
             }
         },
         "transform": [
             {
-                "lookup": "properties.NAME",
+                "lookup": "properties.name",
                 "from": {
-                    "data": {
-                        "url": "data/FIT3179_w9_hw_olympic.csv"
-                        },
-                        "key": "Country",
-                        "fields": ["Bronze"]
+                    "data": {"url": "data/FIT3179_olympic.csv"},
+                    "key": "Country",
+                    "fields": ["Bronze", "Country"]
                     }
                 }
             ],
@@ -39,10 +44,21 @@
                     "field": "Bronze",
                     "type": "quantitative",
                     "title": "number of medals",
-                    "scale": {"scheme": "blues"}
-                }
+                    "scale": {"scheme": "purples"} 
+                },
+                "tooltip":[
+                    {"field": "Country","type": "nominal"},
+                    {"field": "Bronze","type": "quantitative", "title": "no of bronze medal"}
+            ]
             }
-        }
+        },
+        {
+            "data": {
+              "url": "data/graticules.json",
+              "format": {"type": "topojson", "feature": "graticules"}
+            },
+            "mark": {"type": "geoshape", "fill": null, "stroke": "white"}
+          }
         ]
 
     }
