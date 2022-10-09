@@ -1,0 +1,128 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "data/ppp_cleaned.csv"},
+    "title": { "text": "" },
+
+    "params": [
+        {
+            "name": "Year_selection",
+            "value": 2018,
+            "bind": {
+              "input": "range",
+              "min": 1990,
+              "max": 2020,
+              "step": 1,
+              "name": "Year:  "
+            }
+        },
+        {
+            "name": "center_to",
+            "value": [0, 0],
+            "bind": {
+                "input": "select",
+                "options": [
+                    [0,0], [54.52, 15.25],[54.52, -105.25],[-8.78, -105.25],
+                    [-2.21, -115.66],[38.79, -106.53],[147.1, -37.6],
+                    [29.29,-42.5],[-8.78,34.5]
+                ],
+                "labels": ["Overview", "Europe", "North America", "South America", 
+                            "Southeastern Asia", "East Asia", "Central & South Asia",
+                            "Middle East", "Africa"],
+                "name": "Map Centre: "
+            }
+        },
+        {
+            "name": "zoom_level",
+            "value": 500,
+            "bind": {
+                "input": "range",
+                "min": 100,
+                "max": 1000,
+                "step": 10,
+                "name": "Zoom: "
+            }
+        }
+    ],
+    "vconcat": [
+        {
+          "projection": {
+            "type": "equalEarth",
+            "center": {"expr": "center_to"},
+            "scale": {"expr": "zoom_level"}
+          },
+    "layer":[
+        {
+            "data": {
+                "url": "data/oceans.json",
+                "format": {
+                    "type": "topojson", 
+                    "feature":"oceans"}
+            },
+            "mark": {
+                "type": "geoshape", 
+                "stroke": "grey",
+                "fill": "lightblue"
+            }
+        },
+        {
+            "data": {
+                "url": "data/world_map.json",
+                "format": {
+                    "type": "topojson", 
+                    "feature":"countries"}
+            },
+            "mark": {
+                "type": "geoshape", 
+                "stroke": "grey",
+                "fill": "lightgrey"
+            }
+        },
+        {
+            "transform": [
+                {
+                    "lookup": "Country Name",
+                    "from": {
+                        "data":{
+                            "url": "data/world_map.json",
+                            "format":{
+                                "type": "topojson",
+                                "feature": "countries"
+                            }
+                        },
+                        "key": "properties.name"
+                    },
+                    "as": "geo"
+                },
+                {"filter": "year(datum.Year) == Year_selection"}
+            ],
+            "mark": {
+                "type": "geoshape",
+                "stroke": "grey"
+            },
+            "encoding": {
+                "shape": {"field": "geo", "type": "geojson"},
+                "fill":{
+                    "field": "GDP Per Capita",
+                    "type": "quantitative",
+                    "title": "GDP Per Capita",
+                    "scale": {"scheme": "greens"}
+                }
+            }
+        },
+        {
+            "data": {
+                "url": "data/graticules.json",
+                "format": {
+                    "type": "topojson", 
+                    "feature":"graticules"}
+            },
+            "mark": {
+                "type": "geoshape", 
+                "stroke": "grey",
+                "fill": null
+            }
+        }
+    ]
+    }
+    ]
+}

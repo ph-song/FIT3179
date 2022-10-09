@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Top 10 GDP by Countries" },
+    "data": {
+        "url": "data/gdp_rank.csv"
+    },
+    "mark": {
+        "type": "line", 
+        "point": true
+    },
+    "encoding": {
+        "x": {
+            "field": "Year", 
+            "type": "ordinal"
+        },
+        "y": {
+            "field": "Rank", 
+            "type": "ordinal", 
+            "sort": "x"
+        },
+        "color": {
+            "field": "Country Name"
+        }
+    }
+
+}
