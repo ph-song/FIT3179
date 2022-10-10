@@ -1,0 +1,78 @@
+﻿Sector,Number of Companies,%,country
+Industrials,5613,16.30%,World
+Financials,4790,13.91%,World
+Technology,4623,13.42%,World
+Basic Materials,4095,11.89%,World
+Consumer Discretionary,3985,11.57%,World
+Healthcare,3777,10.96%,World
+Real Estate,1960,5.69%,World
+Consumer Staples,1903,5.52%,World
+Communication Services,1667,4.84%,World
+Energy,1316,3.82%,World
+Utilities,717,2.08%,World
+Financials,2356,26.90%,United States
+Healthcare,1571,17.94%,United States
+Technology,1048,11.97%,United States
+Industrials,985,11.25%,United States
+Consumer Discretionary,690,7.88%,United States
+Energy,450,5.14%,United States
+Communication Services,416,4.75%,United States
+Basic Materials,383,4.37%,United States
+Consumer Staples,379,4.33%,United States
+Real Estate,352,4.02%,United States
+Utilities,127,1.45%,United States
+Industrials,859,23.29%,China
+Technology,569,15.43%,China
+Consumer Discretionary,508,13.77%,China
+Basic Materials,437,11.85%,China
+Healthcare,368,9.98%,China
+Consumer Staples,226,6.13%,China
+Real Estate,190,5.15%,China
+Communication Services,189,5.12%,China
+Financials,169,4.58%,China
+Utilities,103,2.79%,China
+Energy,70,1.90%,China
+Financials,438,27.34%,United Kingdom
+Industrials,217,13.55%,United Kingdom
+Consumer Discretionary,162,10.11%,United Kingdom
+Technology,155,9.68%,United Kingdom
+Healthcare,138,8.61%,United Kingdom
+Basic Materials,129,8.05%,United Kingdom
+Energy,104,6.49%,United Kingdom
+Real Estate,95,5.93%,United Kingdom
+Communication Services,82,5.12%,United Kingdom
+Consumer Staples,58,3.62%,United Kingdom
+Utilities,24,1.50%,United Kingdom
+Industrials,102,18.51%,Germany
+Technology,93,16.88%,Germany
+Consumer Discretionary,81,14.70%,Germany
+Financials,69,12.52%,Germany
+Healthcare,60,10.89%,Germany
+Real Estate,45,8.17%,Germany
+Communication Services,31,5.63%,Germany
+Basic Materials,27,4.90%,Germany
+Consumer Staples,22,3.99%,Germany
+Utilities,17,3.09%,Germany
+Energy,4,0.73%,Germany
+Industrials,985,26.57%,Japan
+Consumer Discretionary,682,18.40%,Japan
+Technology,616,16.62%,Japan
+Basic Materials,281,7.58%,Japan
+Consumer Staples,269,7.26%,Japan
+Communication Services,235,6.34%,Japan
+Real Estate,201,5.42%,Japan
+Healthcare,196,5.29%,Japan
+Financials,184,4.96%,Japan
+Utilities,34,0.92%,Japan
+Energy,24,0.65%,Japan
+Industrials,110,16.67%,France
+Technology,109,16.52%,France
+Consumer Discretionary,97,14.70%,France
+Healthcare,88,13.33%,France
+Communication Services,54,8.18%,France
+Real Estate,53,8.03%,France
+Financials,51,7.73%,France
+Consumer Staples,40,6.06%,France
+Basic Materials,32,4.85%,France
+Utilities,16,2.42%,France
+Energy,10,1.52%,France

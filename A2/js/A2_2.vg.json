@@ -1,26 +1,62 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Top 10 GDP by Countries" },
+    "title": { "text": "Top 10 Countries GDP" },
     "data": {
         "url": "data/gdp_rank.csv"
     },
-    "mark": {
-        "type": "line", 
-        "point": true
-    },
-    "encoding": {
-        "x": {
-            "field": "Year", 
-            "type": "ordinal"
+    "width": 900,
+    "height": 500,
+    "layer":[
+        {
+            "mark": {
+                "type": "line"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year", 
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "Rank", 
+                    "type": "ordinal", 
+                    "sort": "x"
+                },
+                "color": {
+                    "field": "Country Name"
+                }
+            }
         },
-        "y": {
-            "field": "Rank", 
-            "type": "ordinal", 
-            "sort": "x"
-        },
-        "color": {
-            "field": "Country Name"
+        {
+            "mark": {
+                "type": "image",
+                "width": 35, 
+                "height": 35
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year", 
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "Rank", 
+                    "type": "ordinal", 
+                    "sort": "x"
+                },
+                "url":{
+                    "field":"img",
+                    "type": "nominal"
+                },
+                "size":{
+                    "field":"GDP (trillion USD)",
+                    "type": "quantitative"
+                }
+                ,
+                "tooltip":[
+                    {"field": "Country Name"},
+                    {"field": "GDP (trillion USD)"},
+                    {"field": "Rank"}
+                ]
+            }
         }
-    }
-
+    ]
 }

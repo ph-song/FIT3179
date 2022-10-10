@@ -1,13 +1,35 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": { "text": "" },
-    "data": {
-        "url": "data/.csv"
-    },
-    "mark": {
-        "type": ""
-    },
-    "encoding": {
-    }
-
+    "params": [
+        {
+            "name": "country_select",
+            "value": "World",
+            "bind": {
+                "input": "select",
+                "options":[
+                    "World", "United States", "China",
+                    "Japan", "Germany", "France"
+                ],
+                "labels": [
+                    "World", "United States", "China",
+                    "Japan", "Germany", "France"
+                ],
+            "name": "country :"
+            }
+        }
+    ],
+    "hconcat": [
+        {
+            "data":{"url": "data/sector.csv"},
+            "mark": {"type":"arc", "innerRadius": 50},
+            "encoding": {
+                "theta":{"field": "Number of Companies", "type": "quantitative"},
+                "color":{"field": "Sector", "type": "nominal"}
+            },
+            "transform": [
+                {"filter": "datum.country == country_select"}
+            ]
+        }
+    ]
 }

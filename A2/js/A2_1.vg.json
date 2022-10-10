@@ -1,15 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "data/ppp_cleaned.csv"},
-    "title": { "text": "" },
-
+    "data": {"url": "data/gdp_per_capita.csv"},
+    "title": { "text": "GDP per capita of each country" },
     "params": [
         {
             "name": "Year_selection",
             "value": 2018,
             "bind": {
               "input": "range",
-              "min": 1990,
+              "min": 1980,
               "max": 2020,
               "step": 1,
               "name": "Year:  "
@@ -21,8 +20,8 @@
             "bind": {
                 "input": "select",
                 "options": [
-                    [0,0], [54.52, 15.25],[54.52, -105.25],[-8.78, -105.25],
-                    [-2.21, -115.66],[38.79, -106.53],[147.1, -37.6],
+                    [0,0], [100, 52],[54.52, 105.25],[8.78, 105.25],
+                    [-2.21, -115.66],[38.79, 6.53],[147.1, 37.6],
                     [29.29,-42.5],[-8.78,34.5]
                 ],
                 "labels": ["Overview", "Europe", "North America", "South America", 
@@ -33,7 +32,7 @@
         },
         {
             "name": "zoom_level",
-            "value": 500,
+            "value": 100,
             "bind": {
                 "input": "range",
                 "min": 100,
@@ -45,10 +44,13 @@
     ],
     "vconcat": [
         {
-          "projection": {
+            "width": 900,
+            "height": 500,
+            "projection": {
             "type": "equalEarth",
             "center": {"expr": "center_to"},
             "scale": {"expr": "zoom_level"}
+            
           },
     "layer":[
         {
@@ -58,6 +60,7 @@
                     "type": "topojson", 
                     "feature":"oceans"}
             },
+            
             "mark": {
                 "type": "geoshape", 
                 "stroke": "grey",
@@ -65,6 +68,12 @@
             }
         },
         {
+            "transform": [
+                {
+                    "calculate": "'unavailable data in ' + datum.properties.name",
+                    "as": "note"
+                }
+            ],
             "data": {
                 "url": "data/world_map.json",
                 "format": {
@@ -75,6 +84,9 @@
                 "type": "geoshape", 
                 "stroke": "grey",
                 "fill": "lightgrey"
+            },
+            "encoding": {
+                "tooltip": {"field": "note"}
             }
         },
         {
@@ -101,12 +113,17 @@
             },
             "encoding": {
                 "shape": {"field": "geo", "type": "geojson"},
-                "fill":{
+                "color":{
                     "field": "GDP Per Capita",
                     "type": "quantitative",
                     "title": "GDP Per Capita",
-                    "scale": {"scheme": "greens"}
-                }
+                    "scale": {"domainMax": 75000}
+                },
+                "tooltip":[
+                    {"field": "Country Name", "type": "nominal", "title": "country"},
+                    {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP per capita (USD)", "format": "," },
+                    {"field": "Year", "type": "ordinal", "title": "year"}
+                ]
             }
         },
         {
@@ -118,7 +135,7 @@
             },
             "mark": {
                 "type": "geoshape", 
-                "stroke": "grey",
+                "stroke": "white",
                 "fill": null
             }
         }
