@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Top 10 Countries GDP" },
     "data": {
         "url": "data/gdp_rank.csv"
     },
@@ -22,7 +21,8 @@
                     "sort": "x"
                 },
                 "color": {
-                    "field": "Country Name"
+                    "field": "Country Name",
+                    "legend": null
                 }
             }
         },
@@ -49,8 +49,7 @@
                 "size":{
                     "field":"GDP (trillion USD)",
                     "type": "quantitative"
-                }
-                ,
+                },
                 "tooltip":[
                     {"field": "Country Name"},
                     {"field": "GDP (trillion USD)"},
@@ -58,5 +57,7 @@
                 ]
             }
         }
-    ]
+
+    ],
+    "config": {"font": "sans-serif"}
 }

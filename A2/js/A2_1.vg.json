@@ -1,15 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "data/gdp_per_capita.csv"},
-    "title": { "text": "GDP per capita of each country" },
+    "data": {"url": "data/gni_per_capita.csv"},
     "params": [
         {
             "name": "Year_selection",
             "value": 2018,
             "bind": {
               "input": "range",
-              "min": 1980,
-              "max": 2020,
+              "min": 2000,
+              "max": 2021,
               "step": 1,
               "name": "Year:  "
             }
@@ -114,14 +113,14 @@
             "encoding": {
                 "shape": {"field": "geo", "type": "geojson"},
                 "color":{
-                    "field": "GDP Per Capita",
+                    "field": "GNI Per Capita",
                     "type": "quantitative",
-                    "title": "GDP Per Capita",
-                    "scale": {"domainMax": 75000}
+                    "title": "GNI Per Capita",
+                    "scale": {"domainMax": 60000}
                 },
                 "tooltip":[
                     {"field": "Country Name", "type": "nominal", "title": "country"},
-                    {"field": "GDP Per Capita", "type": "quantitative", "title": "GDP per capita (USD)", "format": "," },
+                    {"field": "GNI Per Capita", "type": "quantitative", "title": "GNI per capita (USD)", "format": "," },
                     {"field": "Year", "type": "ordinal", "title": "year"}
                 ]
             }
@@ -141,5 +140,6 @@
         }
     ]
     }
-    ]
+    ],
+    "config": {"font": "sans-serif"}
 }

@@ -1,0 +1,63 @@
+﻿id,name,size,parent
+1,Tencent Holdings Ltd,,59
+2,Kweichow Moutai Co. Ltd,,58
+3,Alibaba Group Holding Limited,,55
+4,Industrial & Commercial Bank of China Ltd,,52
+5,China Construction Bank Corp,,52
+6,China Merchants Bank Co Ltd,,52
+7,Contemporary Amperex Technology Co. Ltd,,51
+8,Agricultural Bank of China Ltd,,52
+9,PetroChina Company Limited,,60
+10,Bank of China Ltd,,52
+11,Ping An Insurance (Group) Company of China Ltd,,52
+12,Meituan,,55
+13,BYD Co Ltd,,55
+14,China Life Insurance Company Limited,,52
+15,China Shenhua Energy Company Ltd,,60
+16,"JD.com, Inc.",,55
+17,China Yangtze Power Co. Ltd,,61
+18,China Petroleum & Chemical Corporation,,51
+19,Industrial Bank Co. Ltd,,52
+20,"NetEase, Inc.",,59
+21,Nongfu Spring Co. Ltd,,58
+22,Shenzhen Mindray Bio-Medical Electronics Co. Ltd,,56
+23,Foshan Haitian Flavouring and Food Company Ltd,,58
+24,Pinduoduo Inc.,,55
+25,Bank of Communications Co. Ltd,,52
+26,China Tourism Group Duty Free Corp Ltd,,55
+27,"Baidu, Inc.",,59
+28,Zijin Mining Group Co Ltd,,54
+29,Xiaomi Corp,,53
+30,Yihai Kerry Arawana Holdings Co. Ltd,,58
+31,LONGi Green Energy Technology Co. Ltd,,53
+32,WuXi AppTec Co. Ltd,,56
+33,"East Money Information Co.,Ltd.",,59
+34,CITIC Securities Company Ltd,,52
+35,Wanhua Chemical Group Co. Ltd,,54
+36,Kuaishou Technology,,59
+37,Jiangsu Hengrui Medicine Co. Ltd,,56
+38,"Beijing-Shanghai High-Speed Railway Co.,Ltd.",,51
+39,Shanghai Pudong Development Bank Co. Ltd,,52
+40,Inner Mongolia Yili Industrial Group Co. Ltd,,58
+41,NIO Limited,,55
+42,"Shanxi Xinghuacun Fen Wine Factory Co.,Ltd.",,58
+43,China CITIC Bank Corp Ltd,,52
+44,Chongqing Zhifei Biological Products Co. Ltd,,56
+45,Poly Developments and Holdings Group Co. Ltd,,57
+46,China Vanke Co. Ltd,,57
+47,WuXi Biologics,,56
+48,Haier Smart Home Co Ltd,,55
+49,ANTA Sports Products Ltd,,55
+50,Great Wall Motor Co Ltd,,55
+51,Industrials,1.0096E+11,62
+52,Financials,3.9848E+11,62
+53,Technology,5780000000,62
+54,Basic Materials,13660000000,62
+55,Consumer Discretionary,1.2949E+11,62
+56,Healthcare,24950000000,62
+57,Real Estate,6990000000,62
+58,Consumer Staples,80410000000,62
+59,Communication Services,65890000000,62
+60,Energy,49840000000,62
+61,Utilities,8420000000,62
+62,total,,

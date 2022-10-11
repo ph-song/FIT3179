@@ -1,0 +1,29 @@
+.viz {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+html, body {
+    background-color: #fffbf6;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: thin;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    column-count: 2;
+}
+

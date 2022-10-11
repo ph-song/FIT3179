@@ -1,111 +1,121 @@
 ﻿Country Name,Country Code,Rank,Year,GDP (trillion USD),img
-United States,USA,1,2011,15.59972812,image/united-states.png
-China,CHN,2,2011,7.551500124,image/china.png
-Japan,JPN,3,2011,6.233147172,image/japan.png
-Germany,DEU,4,2011,3.749314991,image/germany.png
-France,FRA,5,2011,2.865157542,image/france.png
-United Kingdom,GBR,6,2011,2.674891474,image/united-kingdom.png
-Brazil,BRA,7,2011,2.616156607,image/brazil.png
-Italy,ITA,8,2011,2.294994297,image/italy.png
-Russian Federation,RUS,9,2011,2.045925608,image/russia.png
-India,IND,10,2011,1.823049928,image/india.png
-United States,USA,1,2012,16.25397223,image/united-states.png
-China,CHN,2,2012,8.532229987,image/china.png
-Japan,JPN,3,2012,6.272362996,image/japan.png
-Germany,DEU,4,2012,3.527143189,image/germany.png
-United Kingdom,GBR,5,2012,2.719158341,image/united-kingdom.png
-France,FRA,6,2012,2.683671717,image/france.png
-Brazil,BRA,7,2012,2.465228294,image/brazil.png
-Russian Federation,RUS,8,2012,2.208295774,image/russia.png
-Italy,ITA,9,2012,2.086957657,image/italy.png
-Canada,CAN,10,2012,1.556508816,image/canada.png
-United States,USA,1,2013,16.84319099,image/united-states.png
-China,CHN,2,2013,9.570406236,image/china.png
-Japan,JPN,3,2013,5.212328181,image/japan.png
-Germany,DEU,4,2013,3.73380465,image/germany.png
-France,FRA,5,2013,2.811876903,image/france.png
-United Kingdom,GBR,6,2013,2.803291406,image/united-kingdom.png
-Brazil,BRA,7,2013,2.472819362,image/brazil.png
-Russian Federation,RUS,8,2013,2.292473247,image/russia.png
-Italy,ITA,9,2013,2.141924094,image/italy.png
-India,IND,10,2013,1.856722121,image/india.png
-United States,USA,1,2014,17.55068017,image/united-states.png
-China,CHN,2,2014,10.47568292,image/china.png
-Japan,JPN,3,2014,4.896994405,image/japan.png
-Germany,DEU,4,2014,3.889093051,image/germany.png
-United Kingdom,GBR,5,2014,3.087165603,image/united-kingdom.png
-France,FRA,6,2014,2.855964489,image/france.png
-Brazil,BRA,7,2014,2.456043766,image/brazil.png
-Italy,ITA,8,2014,2.162009616,image/italy.png
-Russian Federation,RUS,9,2014,2.059241965,image/russia.png
-India,IND,10,2014,2.039127446,image/india.png
-United States,USA,1,2015,18.20602074,image/united-states.png
-China,CHN,2,2015,11.06155308,image/china.png
-Japan,JPN,3,2015,4.444930652,image/japan.png
-Germany,DEU,4,2015,3.357585719,image/germany.png
-United Kingdom,GBR,5,2015,2.956573779,image/united-kingdom.png
-France,FRA,6,2015,2.439188643,image/france.png
-India,IND,7,2015,2.103587814,image/india.png
-Italy,ITA,8,2015,1.836637711,image/italy.png
-Brazil,BRA,9,2015,1.802212,image/brazil.png
-Canada,CAN,10,2015,1.556508816,image/canada.png
-United States,USA,1,2016,18.69511084,image/united-states.png
-China,CHN,2,2016,11.23327654,image/china.png
-Japan,JPN,3,2016,5.003677628,image/japan.png
-Germany,DEU,4,2016,3.469853464,image/germany.png
-United Kingdom,GBR,5,2016,2.722851958,image/united-kingdom.png
-France,FRA,6,2016,2.472964345,image/france.png
-India,IND,7,2016,2.294797981,image/india.png
-Italy,ITA,8,2016,1.877071688,image/italy.png
-Brazil,BRA,9,2016,1.795693266,image/brazil.png
-Canada,CAN,10,2016,1.527994742,image/canada.png
-United States,USA,1,2017,19.47962006,image/united-states.png
-China,CHN,2,2017,12.31040937,image/china.png
-Japan,JPN,3,2017,4.930837369,image/japan.png
-Germany,DEU,4,2017,3.690849153,image/germany.png
-United Kingdom,GBR,5,2017,2.699016715,image/united-kingdom.png
-India,IND,6,2017,2.651472946,image/india.png
-France,FRA,7,2017,2.595151045,image/france.png
-Brazil,BRA,8,2017,2.063514689,image/brazil.png
-Italy,ITA,9,2017,1.961796197,image/italy.png
-Canada,CAN,10,2017,1.649265644,image/canada.png
-United States,USA,1,2018,20.52715603,image/united-states.png
-China,CHN,2,2018,13.89481755,image/china.png
-Japan,JPN,3,2018,5.037835383,image/japan.png
-Germany,DEU,4,2018,3.977289455,image/germany.png
-United Kingdom,GBR,5,2018,2.900791443,image/united-kingdom.png
-France,FRA,6,2018,2.790956879,image/france.png
-India,IND,7,2018,2.702929719,image/india.png
-Italy,ITA,8,2018,2.091932426,image/italy.png
-Brazil,BRA,9,2018,1.916933708,image/brazil.png
-Canada,CAN,10,2018,1.725329193,image/canada.png
-United States,USA,1,2019,21.37257244,image/united-states.png
-China,CHN,2,2019,14.2799375,image/china.png
-Japan,JPN,3,2019,5.123318152,image/japan.png
-Germany,DEU,4,2019,3.888326789,image/germany.png
-United Kingdom,GBR,5,2019,2.878673912,image/united-kingdom.png
-India,IND,6,2019,2.831552223,image/india.png
-France,FRA,7,2019,2.728870247,image/france.png
-Italy,ITA,8,2019,2.011285743,image/italy.png
-Brazil,BRA,9,2019,1.873288159,image/brazil.png
-Canada,CAN,10,2019,1.742015045,image/canada.png
-United States,USA,1,2020,20.89374383,image/united-states.png
-China,CHN,2,2020,14.68767389,image/china.png
-Japan,JPN,3,2020,5.040107754,image/japan.png
-Germany,DEU,4,2020,3.846413929,image/germany.png
-United Kingdom,GBR,5,2020,2.756900214,image/united-kingdom.png
-India,IND,6,2020,2.667687952,image/india.png
-France,FRA,7,2020,2.630317731,image/france.png
-Italy,ITA,8,2020,1.892574064,image/italy.png
-Canada,CAN,9,2020,1.645423408,image/canada.png
-"Korea, Rep.",KOR,10,2020,1.637895803,image/south-korea.png
-United States,USA,1,2021,22.9961,image/united-states.png
-China,CHN,2,2021,17.73406265,image/china.png
-Japan,JPN,3,2021,4.93742188,image/japan.png
-Germany,DEU,4,2021,4.223116206,image/germany.png
-United Kingdom,GBR,5,2021,3.186859739,image/united-kingdom.png
-India,IND,6,2021,3.173397591,image/india.png
-France,FRA,7,2021,2.937472758,image/france.png
-Italy,ITA,8,2021,2.099880198,image/italy.png
-Canada,CAN,9,2021,1.99076161,image/canada.png
-"Korea, Rep.",KOR,10,2021,1.798533915,image/south-korea.png
+United States,USA,1,2011,15.6,image/united-states.png
+China,CHN,2,2011,7.55,image/china.png
+Japan,JPN,3,2011,6.23,image/japan.png
+Germany,DEU,4,2011,3.75,image/germany.png
+France,FRA,5,2011,2.87,image/france.png
+United Kingdom,GBR,6,2011,2.67,image/united-kingdom.png
+Brazil,BRA,7,2011,2.62,image/brazil.png
+Italy,ITA,8,2011,2.29,image/italy.png
+India ,IND,10,2011,1.82,image/india.png
+Russia,RUS,9,2011,2.05,image/russia.png
+United States,USA,1,2012,16.25,image/united-states.png
+China,CHN,2,2012,8.53,image/china.png
+Japan,JPN,3,2012,6.27,image/japan.png
+Germany,DEU,4,2012,3.53,image/germany.png
+United Kingdom,GBR,5,2012,2.72,image/united-kingdom.png
+France,FRA,6,2012,2.68,image/france.png
+Brazil,BRA,7,2012,2.47,image/brazil.png
+Russia,RUS,8,2012,2.21,image/russia.png
+Italy,ITA,9,2012,2.09,image/italy.png
+Canada ,CAN,10,2012,1.56,image/canada.png
+United States,USA,1,2013,16.84,image/united-states.png
+China,CHN,2,2013,9.57,image/china.png
+Japan,JPN,3,2013,5.21,image/japan.png
+Germany,DEU,4,2013,3.73,image/germany.png
+France,FRA,5,2013,2.81,image/france.png
+United Kingdom,GBR,6,2013,2.8,image/united-kingdom.png
+Brazil,BRA,7,2013,2.47,image/brazil.png
+Russia,RUS,8,2013,2.29,image/russia.png
+Italy,ITA,9,2013,2.14,image/italy.png
+India,IND,10,2013,1.86,image/india.png
+United States,USA,1,2014,17.55,image/united-states.png
+China,CHN,2,2014,10.48,image/china.png
+Japan,JPN,3,2014,4.9,image/japan.png
+Germany,DEU,4,2014,3.89,image/germany.png
+United Kingdom,GBR,5,2014,3.09,image/united-kingdom.png
+France,FRA,6,2014,2.86,image/france.png
+Brazil,BRA,7,2014,2.46,image/brazil.png
+Italy,ITA,8,2014,2.16,image/italy.png
+Russia,RUS,9,2014,2.06,image/russia.png
+India,IND,10,2014,2.04,image/india.png
+United States,USA,1,2015,18.21,image/united-states.png
+China,CHN,2,2015,11.06,image/china.png
+Japan,JPN,3,2015,4.44,image/japan.png
+Germany,DEU,4,2015,3.36,image/germany.png
+United Kingdom,GBR,5,2015,2.96,image/united-kingdom.png
+France,FRA,6,2015,2.44,image/france.png
+India,IND,7,2015,2.1,image/india.png
+Italy,ITA,8,2015,1.84,image/italy.png
+Brazil,BRA,9,2015,1.8,image/brazil.png
+Canada,CAN,10,2015,1.56,image/canada.png
+United States,USA,1,2016,18.7,image/united-states.png
+China,CHN,2,2016,11.23,image/china.png
+Japan,JPN,3,2016,5,image/japan.png
+Germany,DEU,4,2016,3.47,image/germany.png
+United Kingdom,GBR,5,2016,2.72,image/united-kingdom.png
+France,FRA,6,2016,2.47,image/france.png
+India,IND,7,2016,2.29,image/india.png
+Italy,ITA,8,2016,1.88,image/italy.png
+Brazil,BRA,9,2016,1.8,image/brazil.png
+Canada,CAN,10,2016,1.53,image/canada.png
+United States,USA,1,2017,19.48,image/united-states.png
+China,CHN,2,2017,12.31,image/china.png
+Japan,JPN,3,2017,4.93,image/japan.png
+Germany,DEU,4,2017,3.69,image/germany.png
+United Kingdom,GBR,5,2017,2.7,image/united-kingdom.png
+India,IND,6,2017,2.65,image/india.png
+France,FRA,7,2017,2.6,image/france.png
+Brazil,BRA,8,2017,2.06,image/brazil.png
+Italy,ITA,9,2017,1.96,image/italy.png
+Canada,CAN,10,2017,1.65,image/canada.png
+United States,USA,1,2018,20.53,image/united-states.png
+China,CHN,2,2018,13.89,image/china.png
+Japan,JPN,3,2018,5.04,image/japan.png
+Germany,DEU,4,2018,3.98,image/germany.png
+United Kingdom,GBR,5,2018,2.9,image/united-kingdom.png
+France,FRA,6,2018,2.79,image/france.png
+India,IND,7,2018,2.7,image/india.png
+Italy,ITA,8,2018,2.09,image/italy.png
+Brazil,BRA,9,2018,1.92,image/brazil.png
+Canada,CAN,10,2018,1.73,image/canada.png
+United States,USA,1,2019,21.37,image/united-states.png
+China,CHN,2,2019,14.28,image/china.png
+Japan,JPN,3,2019,5.12,image/japan.png
+Germany,DEU,4,2019,3.89,image/germany.png
+United Kingdom,GBR,5,2019,2.88,image/united-kingdom.png
+India,IND,6,2019,2.83,image/india.png
+France,FRA,7,2019,2.73,image/france.png
+Italy,ITA,8,2019,2.01,image/italy.png
+Brazil,BRA,9,2019,1.87,image/brazil.png
+Canada,CAN,10,2019,1.74,image/canada.png
+United States,USA,1,2020,20.89,image/united-states.png
+China,CHN,2,2020,14.69,image/china.png
+Japan,JPN,3,2020,5.04,image/japan.png
+Germany,DEU,4,2020,3.85,image/germany.png
+United Kingdom,GBR,5,2020,2.76,image/united-kingdom.png
+India,IND,6,2020,2.67,image/india.png
+France,FRA,7,2020,2.63,image/france.png
+Italy,ITA,8,2020,1.89,image/italy.png
+Canada,CAN,9,2020,1.65,image/canada.png
+Korea,KOR,10,2020,1.64,image/south-korea.png
+United States,USA,1,2021,23,image/united-states.png
+China,CHN,2,2021,17.73,image/china.png
+Japan,JPN,3,2021,4.94,image/japan.png
+Germany,DEU,4,2021,4.22,image/germany.png
+United Kingdom,GBR,5,2021,3.19,image/united-kingdom.png
+India,IND,6,2021,3.17,image/india.png
+France,FRA,7,2021,2.94,image/france.png
+Italy,ITA,8,2021,2.1,image/italy.png
+Canada,CAN,9,2021,1.99,image/canada.png
+Korea,KOR,10,2021,1.8,image/south-korea.png
+United States,USA,1,2025,28.79,image/united-states.png
+China,CHN,2,2025,25.35,image/china.png
+Japan,JPN,3,2025,5.82,image/japan.png
+Germany,DEU,4,2025,4.99,image/germany.png
+India,IND,5,2025,4.68,image/india.png
+United Kingdom,GBR,6,2025,4.13,image/united-kingdom.png
+France,FRA,7,2025,3.37,image/france.png
+Canada,CAN,8,2025,2.58,image/canada.png
+Italy,ITA,9,2025,2.37,image/italy.png
+Brazil ,BRA,10,2025,2.23,image/brazil.png

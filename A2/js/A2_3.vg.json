@@ -8,12 +8,12 @@
             "bind": {
                 "input": "select",
                 "options":[
-                    "World", "United States", "China",
-                    "Japan", "Germany", "France"
+                    "World", "United States", "United Kingdom",
+                    "China", "Japan", "Germany"
                 ],
                 "labels": [
-                    "World", "United States", "China",
-                    "Japan", "Germany", "France"
+                    "World", "United States", "United Kingdom",
+                    "China", "Japan", "Germany"
                 ],
             "name": "country :"
             }
@@ -21,15 +21,42 @@
     ],
     "hconcat": [
         {
-            "data":{"url": "data/sector.csv"},
+            "width": 400,
+            "height": 200,
+            "data":{"url": "data/country_sector.csv"},
             "mark": {"type":"arc", "innerRadius": 50},
             "encoding": {
                 "theta":{"field": "Number of Companies", "type": "quantitative"},
-                "color":{"field": "Sector", "type": "nominal"}
+                "color":{"field": "Sector", "type": "nominal"},
+                "tooltip":[
+                    {"field": "country"},
+                    {"field": "Sector"},
+                    {"field": "Number of Companies"}
+                ]
             },
             "transform": [
                 {"filter": "datum.country == country_select"}
             ]
+        },
+        {
+            "width": 400,
+            "height": 200,
+            "data":{"url": "data/top10_company.csv"},
+            "mark": {"type":"bar"},
+            "encoding": {
+                "x" : {"field": "Valuation (Billion USD)", "type": "quantitative"},
+                "y" : {"field": "Rank", "type": "ordinal", "sort": "-x"},
+                "color": {"field": "Sector", "type": "nominal"},
+                "tooltip":[
+                    {"field": "Company"},
+                    {"field": "Valuation (Billion USD)"},
+                    {"field": "Country"}
+                ]
+            },
+            "transform": [
+                {"filter": "datum.Country == country_select"}
+            ]
         }
-    ]
+    ],
+    "config": {"font": "sans-serif"}
 }
