@@ -22,7 +22,15 @@
                 },
                 "color": {
                     "field": "Country Name",
-                    "legend": null
+                    "legend": null,
+                    "scale": {
+                        "range":[
+                            "#0052b4", "#751a46", "#a2001d", "#ff9812",
+                            "#ffda43", 
+                            "#dbc9b8", "#acabb1", "#a27e61", "#338af4", 
+                             "#002266", "#6c2e6d"          
+                        ]
+                    }
                 }
             }
         },

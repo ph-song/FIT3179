@@ -1,29 +1,42 @@
 .viz {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+justify-content: center;
 }
 
 
 
 html, body {
-    background-color: #fffbf6;
+    background-color: white;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+justify-content: center;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+justify-content: center;
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: thin;
+    display: flex;
+justify-content: center;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    column-count: 2;
+    display: flex;
+justify-content: center;
 }
 
+.outer {
+    display: flex;
+    justify-content: center;
+}
