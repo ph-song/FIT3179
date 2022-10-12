@@ -2,38 +2,39 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
-
-
-html, body {
-    background-color: white;
-}
 
 h1 {
     font-family: 'Poppins', sans-serif;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: thin;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     display: flex;
-justify-content: center;
+    justify-content: center;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;    
 }
 
 .outer {

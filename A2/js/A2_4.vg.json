@@ -6,11 +6,22 @@
     "x":{
       "field":"Country",
       "aggregate": "count"
-
     },
     "y":{
       "field": "Class",
-      "type": "ordinal"
-    }
+      "type": "ordinal",
+      "sort":["High", "Upper middle", "Lower middle", "Low"]
+    },
+    "color":{
+      "field": "Class",
+      "type": "ordinal",
+      "sort":["High", "Upper middle", "Lower middle", "Low"],
+      "scale": {"scheme": "plasma"}
+    },
+    "tooltip":[
+      {"field": "Class"},
+      {"field":"Country","aggregate": "count", "title": "number of country"}
+    ]
+
   }
 }

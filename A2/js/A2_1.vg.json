@@ -12,33 +12,6 @@
               "step": 1,
               "name": "Year:  "
             }
-        },
-        {
-            "name": "center_to",
-            "value": [0, 0],
-            "bind": {
-                "input": "select",
-                "options": [
-                    [0,0], [100, 52],[54.52, 105.25],[8.78, 105.25],
-                    [-2.21, -115.66],[38.79, 6.53],[147.1, 37.6],
-                    [29.29,-42.5],[-8.78,34.5]
-                ],
-                "labels": ["Overview", "Europe", "North America", "South America", 
-                            "Southeastern Asia", "East Asia", "Central & South Asia",
-                            "Middle East", "Africa"],
-                "name": "Map Centre: "
-            }
-        },
-        {
-            "name": "zoom_level",
-            "value": 100,
-            "bind": {
-                "input": "range",
-                "min": 100,
-                "max": 1000,
-                "step": 10,
-                "name": "Zoom: "
-            }
         }
     ],
     "vconcat": [
@@ -46,9 +19,7 @@
             "width": 900,
             "height": 500,
             "projection": {
-            "type": "equalEarth",
-            "center": {"expr": "center_to"},
-            "scale": {"expr": "zoom_level"}
+            "type": "equalEarth"
             
           },
     "layer":[
@@ -63,7 +34,7 @@
             "mark": {
                 "type": "geoshape", 
                 "stroke": "grey",
-                "fill": "lightblue"
+                "fill": "#ededed"
             }
         },
         {
@@ -89,6 +60,7 @@
             }
         },
         {
+            "title": "World Economies by Size of GNI per capita",
             "transform": [
                 {
                     "lookup": "Country Name",
@@ -115,8 +87,8 @@
                 "color":{
                     "field": "GNI Per Capita",
                     "type": "quantitative",
-                    "title": "GNI Per Capita",
-                    "scale": {"domainMax": 60000}
+                    "title": "GNI per capita",
+                    "scale": {"domainMax": 60000, "scheme": "plasma", "reverse": true}
                 },
                 "tooltip":[
                     {"field": "Country Name", "type": "nominal", "title": "country"},
