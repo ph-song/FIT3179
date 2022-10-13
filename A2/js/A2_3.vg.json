@@ -1,72 +1,35 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "" },
-    "params": [
-        {
-            "name": "country_select",
-            "value": "World",
-            "bind": {
-                "input": "select",
-                "options":[
-                    "World", "United States", "United Kingdom",
-                    "China", "Japan", "Germany"
-                ],
-                "labels": [
-                    "World", "United States", "United Kingdom",
-                    "China", "Japan", "Germany"
-                ],
-            "name": "country :"
-            }
+    "data": {"url": "data/gdp_rank.csv"},
+    "width": 800,
+    "height": 500,
+    "layer": [
+      {
+        "mark": {"type": "line", "strokeWidth": 3},
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"field": "Rank", "type": "ordinal", "sort": "x"},
+          "color": {
+            "field": "Country Name",
+            "legend": null,
+            "scale": {"range": ["#000000"]}
+          }
         }
-    ],
-    "hconcat": [
-        {
-            "width": 400,
-            "height": 200,
-            "data":{"url": "data/country_sector.csv"},
-            "mark": {"type":"arc", "innerRadius": 50},
-            "encoding": {
-                "theta":{"field": "Number of Companies", "type": "quantitative"},
-                "color":{"field": "Sector", "type": "nominal"},
-                "tooltip":[
-                    {"field": "country"},
-                    {"field": "Sector"},
-                    {"field": "Number of Companies"}
-                ]
-            },
-            "transform": [
-                {"filter": "datum.country == country_select"}
-            ]
-        },
-        {
-            "width": 400,
-            "height": 200,
-            "data":{"url": "data/top10_company.csv"},
-            "mark": {"type":"bar"},
-            "encoding": {
-                "x" : {"field": "Valuation (Billion USD)", "type": "quantitative"},
-                "y" : {"field": "Rank", "type": "ordinal", "sort": "-x"},
-                "color": {
-                    "field": "Sector", 
-                    "type": "nominal",
-                    "scale": {
-                        "range":[
-                            "#a2001d", "#d80128", "#ff9812","#ffda43", 
-                            "#dbc9b8", "#acabb1", "#a27e61", "#338af4", 
-                            "#0052b4", "#002266", "#751a46"          
-                        ]
-                    }
-                },
-                "tooltip":[
-                    {"field": "Company"},
-                    {"field": "Valuation (Billion USD)"},
-                    {"field": "Country"}
-                ]
-            },
-            "transform": [
-                {"filter": "datum.Country == country_select"}
-            ]
+      },
+      {
+        "mark": {"type": "image", "width": 30, "height": 30},
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"field": "Rank", "type": "ordinal", "sort": "x"},
+          "url": {"field": "img", "type": "nominal"},
+          "size": {"field": "GDP (trillion USD)", "type": "quantitative"},
+          "tooltip": [
+            {"field": "Country Name", "title": "Country"},
+            {"field": "GDP (trillion USD)"},
+            {"field": "Rank"}
+          ]
         }
+      }
     ],
     "config": {"font": "sans-serif"}
-}
+  }

@@ -1,67 +1,31 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-        "url": "data/gdp_rank.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "data/income_class_2021.csv"},
+  "width": 750,
+  "height": 100,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "aggregate": "count",
+      "title": "Number of Economies"
     },
-    "width": 900,
-    "height": 500,
-    "layer":[
-        {
-            "mark": {
-                "type": "line",
-                "strokeWidth": 2.5
-            },
-            "encoding": {
-                "x": {
-                    "field": "Year", 
-                    "type": "ordinal"
-                },
-                "y": {
-                    "field": "Rank", 
-                    "type": "ordinal", 
-                    "sort": "x"
-                },
-                "color": {
-                    "field": "Country Name",
-                    "legend": null,
-                    "scale": {
-                        "range":["#000000"]
-                    }
-                }
-            }
-        },
-        {
-            "mark": {
-                "type": "image",
-                "width": 35, 
-                "height": 35
-            },
-            "encoding": {
-                "x": {
-                    "field": "Year", 
-                    "type": "ordinal"
-                },
-                "y": {
-                    "field": "Rank", 
-                    "type": "ordinal", 
-                    "sort": "x"
-                },
-                "url":{
-                    "field":"img",
-                    "type": "nominal"
-                },
-                "size":{
-                    "field":"GDP (trillion USD)",
-                    "type": "quantitative"
-                },
-                "tooltip":[
-                    {"field": "Country Name"},
-                    {"field": "GDP (trillion USD)"},
-                    {"field": "Rank"}
-                ]
-            }
-        }
-
-    ],
-    "config": {"font": "sans-serif"}
+    "y": {
+      "field": "Class",
+      "type": "ordinal",
+      "title": "Income Group",
+      "sort": ["High", "Upper middle", "Lower middle", "Low"]
+    },
+    "color": {
+      "field": "Class",
+      "type": "ordinal",
+      "sort": ["High", "Upper middle", "Lower middle", "Low"],
+      "scale": {"scheme": "plasma"},
+      "legend": {"title": "Income Group", "orient": "bottom"}
+    },
+    "tooltip": [
+      {"field": "Class", "title": "Income Group"},
+      {"field": "Country", "aggregate": "count", "title": "Number of Economies"}
+    ]
+  }
 }

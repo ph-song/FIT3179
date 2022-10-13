@@ -1,27 +1,103 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "data/income_class_2021.csv"},
-  "mark":"bar",
-  "encoding": {
-    "x":{
-      "field":"Country",
-      "aggregate": "count"
-    },
-    "y":{
-      "field": "Class",
-      "type": "ordinal",
-      "sort":["High", "Upper middle", "Lower middle", "Low"]
-    },
-    "color":{
-      "field": "Class",
-      "type": "ordinal",
-      "sort":["High", "Upper middle", "Lower middle", "Low"],
-      "scale": {"scheme": "plasma"}
-    },
-    "tooltip":[
-      {"field": "Class"},
-      {"field":"Country","aggregate": "count", "title": "number of country"}
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": ""},
+    "params": [
+      {
+        "name": "country_select",
+        "value": "World",
+        "bind": {
+          "input": "select",
+          "options": [
+            "World",
+            "United States",
+            "United Kingdom",
+            "China",
+            "Japan",
+            "Germany"
+          ],
+          "labels": [
+            "World",
+            "United States",
+            "United Kingdom",
+            "China",
+            "Japan",
+            "Germany"
+          ],
+          "name": "country :"
+        }
+      }
+    ],
+    "hconcat": [
+      {
+        "title":"Number of Top Companies by Sector",
+        "width": 375,
+        "height": 275,
+        "data": {"url": "data/country_sector.csv"},
+        "layer": [
+          {
+            "mark": {"type": "arc", "innerRadius": 60, "outerRadius": 110},
+            "encoding": {"color": {"field": "Sector", "type": "nominal"}}
+          },
+          {
+            "mark": {"type": "text", "radius": 125},
+            "encoding": {"text": {"field": "Sector"}}
+          }
+        ],
+        "encoding": {
+          "theta": {
+            "field": "Number of Companies",
+            "type": "quantitative",
+            "stack": true
+          },
+          "tooltip": [
+            {"field": "country", "title": "Country"},
+            {"field": "Sector"},
+            {"field": "Number of Companies"}
+          ]
+        },
+        "transform": [{"filter": "datum.country == country_select"}]
+      },
+      {
+        "title":"Top 10 Most Valuable Companies",
+        "width": 375,
+        "height": 200,
+        "data": {"url": "data/top10_company.csv"},
+        "mark": {"type": "bar"},
+        "encoding": {
+          "y": {"field": "Valuation (Billion USD)", "type": "quantitative"},
+          "x": {
+            "field": "Company", "type": "ordinal", "sort": "-y", 
+            "axis":{"labelAngle":-30, "labelLimit": 100}
+          },
+          "color": {
+            "field": "Sector",
+            "type": "nominal",
+            "scale": {
+              "range": [
+                "#a2001d",
+                "#d80128",
+                "#ff9812",
+                "#ffda43",
+                "#dbc9b8",
+                "#acabb1",
+                "#338af4",
+                "#0052b4",
+                "#002266",
+                "#751a46"
+              ]
+            },
+            "legend": {
+              "orient": "bottom",
+              "columns": 9
+            }
+          },
+          "tooltip": [
+            {"field": "Company"},
+            {"field": "Valuation (Billion USD)"},
+            {"field": "Country"}
+          ]
+        },
+        "transform": [{"filter": "datum.Country == country_select"}]
+      }
     ]
-
   }
-}

@@ -9,7 +9,6 @@ Real Estate,1960,5.69%,World
 Consumer Staples,1903,5.52%,World
 Communication Services,1667,4.84%,World
 Energy,1316,3.82%,World
-Utilities,717,2.08%,World
 Financials,2356,26.90%,United States
 Healthcare,1571,17.94%,United States
 Technology,1048,11.97%,United States
@@ -20,7 +19,6 @@ Communication Services,416,4.75%,United States
 Basic Materials,383,4.37%,United States
 Consumer Staples,379,4.33%,United States
 Real Estate,352,4.02%,United States
-Utilities,127,1.45%,United States
 Industrials,859,23.29%,China
 Technology,569,15.43%,China
 Consumer Discretionary,508,13.77%,China
@@ -30,7 +28,6 @@ Consumer Staples,226,6.13%,China
 Real Estate,190,5.15%,China
 Communication Services,189,5.12%,China
 Financials,169,4.58%,China
-Utilities,103,2.79%,China
 Energy,70,1.90%,China
 Financials,438,27.34%,United Kingdom
 Industrials,217,13.55%,United Kingdom
@@ -42,7 +39,6 @@ Energy,104,6.49%,United Kingdom
 Real Estate,95,5.93%,United Kingdom
 Communication Services,82,5.12%,United Kingdom
 Consumer Staples,58,3.62%,United Kingdom
-Utilities,24,1.50%,United Kingdom
 Industrials,102,18.51%,Germany
 Technology,93,16.88%,Germany
 Consumer Discretionary,81,14.70%,Germany
@@ -52,7 +48,6 @@ Real Estate,45,8.17%,Germany
 Communication Services,31,5.63%,Germany
 Basic Materials,27,4.90%,Germany
 Consumer Staples,22,3.99%,Germany
-Utilities,17,3.09%,Germany
 Energy,4,0.73%,Germany
 Industrials,985,26.57%,Japan
 Consumer Discretionary,682,18.40%,Japan
@@ -63,5 +58,4 @@ Communication Services,235,6.34%,Japan
 Real Estate,201,5.42%,Japan
 Healthcare,196,5.29%,Japan
 Financials,184,4.96%,Japan
-Utilities,34,0.92%,Japan
 Energy,24,0.65%,Japan
