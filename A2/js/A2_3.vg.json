@@ -25,7 +25,7 @@
           "size": {"field": "GDP (trillion USD)", "type": "quantitative"},
           "tooltip": [
             {"field": "Country Name", "title": "Country"},
-            {"field": "GDP (trillion USD)"},
+            {"field": "GDP (trillion USD)", "format": ".2f"},
             {"field": "Rank"}
           ]
         }
